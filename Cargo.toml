@@ -1,6 +1,6 @@
 [package]
-name = "cose-rust"
-version = "0.1.7"
+name = "cose-rust-plus"
+version = "0.2.0"
 authors = ["Tiago Ramires"]
 license = "MIT"
 description = "COSE Rust implementation"
@@ -8,7 +8,7 @@ repository = "https://github.com/tramires/cose-rust"
 readme = "README.md"
 keywords = ["cose", "mac", "encryption", "cbor", "signature"]
 categories = ["cryptography", "encoding"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "cose"
@@ -16,9 +16,9 @@ name = "cose"
 [dependencies]
 cbor-codec-plus = "0.8.0"
 openssl = { version = "0.10", features = ["vendored"] }
-rand = "0.8.3"
-hex = {version="0.4.3", optional=true}
-serde_json = {version="1.0.64", optional=true}
+rand = "0.8"
+hex = { version="0.4", optional=true}
+serde_json = { version="1.0", optional=true}
 
 [features]
 json = ["hex", "serde_json"] 
