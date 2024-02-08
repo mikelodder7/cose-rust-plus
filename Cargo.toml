@@ -14,7 +14,7 @@ edition = "2018"
 name = "cose"
 
 [dependencies]
-cbor-codec = "0.7.1"
+cbor-codec-plus = "0.8.0"
 openssl = { version = "0.10", features = ["vendored"] }
 rand = "0.8.3"
 hex = {version="0.4.3", optional=true}
